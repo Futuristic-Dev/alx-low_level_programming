@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - main function
+ * print_last_digit - prints the last digit of a number
  *
- * print last digit
+ * @n: represents the input integer value
  *
  * Return: always 0
  */
