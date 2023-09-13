@@ -1,13 +1,12 @@
 #include "main.h"
 /**
- * main - main function
+ * _abs - prints the absolute value of any integer
+ *
  * @i: absolute value
- * Description: _abs calculates for the
- * absolute value of any integer,as it is represented
- * by i
- * Return: absolute value of an integer
+ *
+ * Return: 0
  */
-int _abs(i)
+int _abs(int i)
 {
 	if (i >= 0)
 	{
