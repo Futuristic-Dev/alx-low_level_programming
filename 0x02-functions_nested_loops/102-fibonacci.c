@@ -16,10 +16,12 @@ int main(void)
 	printf("%lu, ", term_1);
 	for (i = 1 ; i < 50 ; i++)
 	{
-		printf("%lu, ", term_2);
+		printf("%lu", term_2);
 		next = term_1 + term_2;
 		term_1 = term_2;
 		term_2 = next;
+		if (i != 49)
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
