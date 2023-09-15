@@ -10,6 +10,7 @@ int main(void)
 {
 	int i = 0;
 	int j, k;
+	
 	while (i <= 9)
 	{
 		j = 0;
@@ -18,7 +19,7 @@ int main(void)
 			k = 0;
 			while (k <= 9)
 			{
-				if (i != j &&
+ 				if (i != j &&
 				    i < j &&
 			    	    j != k &&
 				    j < k)
