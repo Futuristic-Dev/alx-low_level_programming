@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * puts2 - prints every other character of str starting with the first char
+ * puts_half - prints half of string
  * @str: string to be printed
  * Return: void
  */
 
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int i;
+	int i, n, count = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
-	{
-		if (i % 2 == 0)
-			_putchar(str[i]);
-	}
+		count++;
+	n = (count - 1) / 2;
+	for (i = n + 1; str[i] != '\0'; i++)
+		_putchar(str[i]);
 	_putchar('\n');
 }
