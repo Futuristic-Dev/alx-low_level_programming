@@ -1,0 +1,25 @@
+# Make variables for prerequisites to  be used
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -rf
+
+# Make all files ./
+# Set target to OBJ
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# delete temporary files and ./
+clean :
+	$(RM) *~ $(NAME)
+
+# delete object files
+oclean :
+	$(RM) $(OBJ)
+
+# delete all
+fclean : clean oclean
+
+# delete all and recompile source files
+re : oclean all
