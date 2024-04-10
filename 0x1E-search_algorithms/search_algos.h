@@ -5,20 +5,26 @@
 
 
 /**
-Prototypes for the search algorithms./**
+* search_algos - Prototypes for the search algorithms.
+* @n: Integer
+* Description: Function prototypes of a files
+*/
+
+/**
  * struct listint_s - singly linked list
  *
  * @n: Integer
  * @index: Index of the node in the list
  * @next: Pointer to the next node
  *
- * Description: singly linked list node structure
+ * Description: singly linked list node structure.
  */
+
 typedef struct listint_s
 {
-    int n;
-    size_t index;
-    struct listint_s *next;
+	int n;
+	size_t index;
+	struct listint_s *next;
 } listint_t;
 
 /**
@@ -34,10 +40,10 @@ typedef struct listint_s
 
 typedef struct skiplist_s
 {
-    int n;
-    size_t index;
-    struct skiplist_s *next;
-    struct skiplist_s *express;
+	int n;
+	size_t index;
+	struct skiplist_s *next;
+	struct skiplist_s *express;
 } skiplist_t;
 
 
