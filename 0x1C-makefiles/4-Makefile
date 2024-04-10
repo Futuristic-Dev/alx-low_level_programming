@@ -1,0 +1,25 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# make all files executable
+# set target on OBJ and its recipe
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# delete temporary files and ./(s)
+clean :
+	$(RM) *~ $(NAME)
+
+# delete object files
+oclean :
+	$(RM) $(OBJ)
+
+# delete all files and ./(s)
+fclean : clean oclean
+
+# delete all and recompile source files
+re : oclean all
