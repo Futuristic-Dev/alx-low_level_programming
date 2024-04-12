@@ -5,9 +5,9 @@
 
 
 /**
-* search_algos - Prototypes for the search algorithms.
-* @n: Integer
-* Description: Function prototypes of a files
+ * search_algos - Prototypes for the search algorithms.
+ * @n: Integer
+ * Description: Function prototypes of a files
 */
 
 /**
@@ -18,7 +18,7 @@
  * @next: Pointer to the next node
  *
  * Description: singly linked list node structure.
- */
+*/
 
 typedef struct listint_s
 {
@@ -36,7 +36,7 @@ typedef struct listint_s
  * @express: Pointer to the next node in the express lane
  *
  * Description: singly linked list node structure with an express lane
- */
+*/
 
 typedef struct skiplist_s
 {
